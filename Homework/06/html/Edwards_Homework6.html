@@ -1,0 +1,214 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Homework 6 - Brainstorming Term Project</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-10-24"><meta name="DC.source" content="Edwards_Homework6.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Homework 6 - Brainstorming Term Project</h1><p>1. Who is involved in your study? (list all group members) The people involved in the study are Curtis Crandhall, Hayden Lewis, and Alex Edwards.</p><pre class="codeinput"><span class="comment">% 2. In a general sense, what is the topic you plan to study?</span>
+<span class="comment">% The topic that we are planning to study is the mass balance flow through</span>
+<span class="comment">% the Boise Basin. There is data collected from Curtis regarding the water</span>
+<span class="comment">% input and outputs within the Basin. This data is raw, so there will need</span>
+<span class="comment">% to be some sort of data reduced to create presentable information. The</span>
+<span class="comment">% hope is to use equations to create graphs and give us a better</span>
+<span class="comment">% understanding to the mass balance effect that occurs within the Boise</span>
+<span class="comment">% area.</span>
+
+<span class="comment">% 3. Identify any key references or articles you will need to read in order to complete your study?</span>
+<span class="comment">% References will include information provided from Curtis, and possibly</span>
+<span class="comment">% from instructors within the hydrology department. Another reference would</span>
+<span class="comment">% be mathworks.com to look up any code necessary to create various graphs.</span>
+<span class="comment">% There are numerous articles that we can read as well in order to gain</span>
+<span class="comment">% insight to the process necessary to create understandable graphs. Some</span>
+<span class="comment">% articles include:</span>
+<span class="comment">% http://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=32186.wba</span>
+<span class="comment">% http://www.idahowaterengineering.com/wp-content/uploads/2009/09/D.-Tuthill-Presentation-to-IWRB-Ground-Water-Recharge-Legislation-January-24-2014.pdf</span>
+<span class="comment">% http://water.usgs.gov/nrp/proj.bib/Publications/2011/mcmahon_plummer_etal_2011.pdf</span>
+<span class="comment">% http://info.ngwa.org/gwol/pdf/040678079.pdf</span>
+<span class="comment">% http://ces.iisc.ernet.in/energy/water/proceed/section7/paper5/section7paper5.html</span>
+<span class="comment">% https://www.idwr.idaho.gov/waterboard/WaterPlanning/CAMP/TV_CAMP/PDF/2010/05-20-10_TV-AquiferSys_WaterBdgt.pdf</span>
+
+<span class="comment">% 4. What type of data will you be modeling or analyzing? (e.g. time series, spatial maps)</span>
+<span class="comment">% For this project we will need to use modeling and a time series to create</span>
+<span class="comment">% hydrographs within certain time periods. The data will be stream flow</span>
+<span class="comment">% rates collected at certain stations within</span>
+
+<span class="comment">% 5. What are the inputs and outputs of your code?</span>
+<span class="comment">% Inputs would include stream flow data, rate of discharge, soil</span>
+<span class="comment">% characteristics. Also dates and times in which collection occurs.</span>
+<span class="comment">% Outputs would be information such as hydrographs, recharge values,</span>
+<span class="comment">% season variability.</span>
+
+<span class="comment">% 6. How will you know if your code is correct? (e.g. can you compare with existing results?)</span>
+<span class="comment">% There is data available both online and through the library that we can</span>
+<span class="comment">% compare our data to. There are also several papers that have been written</span>
+<span class="comment">% by scholars in the field and even at Boise State that we can check</span>
+<span class="comment">% resources with.</span>
+
+<span class="comment">% 7. What type of logic will your code use? (e.g. for loops, if,else statements, etc.)</span>
+<span class="comment">% We will be using large amounts of for-loops and functions to crunch large</span>
+<span class="comment">% data sets. We may use if-else statements to exclude data that doesn't fit</span>
+<span class="comment">% within a certain range of the experiment -- outliers. We also may use</span>
+<span class="comment">% catch statements to find or remove errors in the data-set, as NaN's or</span>
+<span class="comment">% errors may be prevalent.</span>
+
+<span class="comment">% 8. How will you present the inputs and outputs? (e.g. 2D plots, histograms, etc.)</span>
+<span class="comment">% We will present out data in the form of box-whisker plots to show</span>
+<span class="comment">% deviation and mean values as recharge may vary seasonally. We will use</span>
+<span class="comment">% histograms to show variations in recharge through time, we may even have</span>
+<span class="comment">% a red line that denotes the RMSE (root mean squared error) of the data.</span>
+<span class="comment">% The red line ultimately will help determine the wellness of fit. There</span>
+<span class="comment">% will also be multiple graphs, some in the form of hydrographs, to</span>
+<span class="comment">% represent some of the data we have collected.</span>
+
+<span class="comment">% 9. What is the significance of the output data? (e.g. how can it be analyzed or used)</span>
+<span class="comment">% The significance of the output data is information that would be</span>
+<span class="comment">% available to the general public regarding data for hydrogeologic problems</span>
+<span class="comment">% within the Boise Basin area. It can also give information about climate</span>
+<span class="comment">% and the ecology of the area.</span>
+
+<span class="comment">% 10. Are there any parts to your project that you currently do not know how to accomplish or implement?</span>
+<span class="comment">% Which parts will you need help from me, if any?</span>
+<span class="comment">% Most of the conceptual questions are easily answered from knowledge from</span>
+<span class="comment">% previous classes. At the moment, there is not any questions that we have,</span>
+<span class="comment">% but it is likely that inquiries regarding computing in MATLAB will occur</span>
+<span class="comment">% once the project gets fully started.</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Homework 6 - Brainstorming Term Project 
+% 1. Who is involved in your study? (list all group members)
+% The people involved in the study are Curtis Crandhall, Hayden Lewis, and
+% Alex Edwards. 
+
+% 2. In a general sense, what is the topic you plan to study?
+% The topic that we are planning to study is the mass balance flow through
+% the Boise Basin. There is data collected from Curtis regarding the water
+% input and outputs within the Basin. This data is raw, so there will need
+% to be some sort of data reduced to create presentable information. The
+% hope is to use equations to create graphs and give us a better
+% understanding to the mass balance effect that occurs within the Boise
+% area. 
+
+% 3. Identify any key references or articles you will need to read in order to complete your study?
+% References will include information provided from Curtis, and possibly
+% from instructors within the hydrology department. Another reference would
+% be mathworks.com to look up any code necessary to create various graphs. 
+% There are numerous articles that we can read as well in order to gain
+% insight to the process necessary to create understandable graphs. Some 
+% articles include: 
+% http://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=32186.wba
+% http://www.idahowaterengineering.com/wp-content/uploads/2009/09/D.-Tuthill-Presentation-to-IWRB-Ground-Water-Recharge-Legislation-January-24-2014.pdf
+% http://water.usgs.gov/nrp/proj.bib/Publications/2011/mcmahon_plummer_etal_2011.pdf
+% http://info.ngwa.org/gwol/pdf/040678079.pdf
+% http://ces.iisc.ernet.in/energy/water/proceed/section7/paper5/section7paper5.html
+% https://www.idwr.idaho.gov/waterboard/WaterPlanning/CAMP/TV_CAMP/PDF/2010/05-20-10_TV-AquiferSys_WaterBdgt.pdf
+
+% 4. What type of data will you be modeling or analyzing? (e.g. time series, spatial maps)
+% For this project we will need to use modeling and a time series to create
+% hydrographs within certain time periods. The data will be stream flow
+% rates collected at certain stations within 
+
+% 5. What are the inputs and outputs of your code?
+% Inputs would include stream flow data, rate of discharge, soil
+% characteristics. Also dates and times in which collection occurs. 
+% Outputs would be information such as hydrographs, recharge values,
+% season variability. 
+
+% 6. How will you know if your code is correct? (e.g. can you compare with existing results?)
+% There is data available both online and through the library that we can
+% compare our data to. There are also several papers that have been written
+% by scholars in the field and even at Boise State that we can check
+% resources with. 
+
+% 7. What type of logic will your code use? (e.g. for loops, if,else statements, etc.)
+% We will be using large amounts of for-loops and functions to crunch large
+% data sets. We may use if-else statements to exclude data that doesn't fit
+% within a certain range of the experiment REPLACE_WITH_DASH_DASH outliers. We also may use
+% catch statements to find or remove errors in the data-set, as NaN's or
+% errors may be prevalent. 
+
+% 8. How will you present the inputs and outputs? (e.g. 2D plots, histograms, etc.)
+% We will present out data in the form of box-whisker plots to show
+% deviation and mean values as recharge may vary seasonally. We will use
+% histograms to show variations in recharge through time, we may even have
+% a red line that denotes the RMSE (root mean squared error) of the data.
+% The red line ultimately will help determine the wellness of fit. There
+% will also be multiple graphs, some in the form of hydrographs, to
+% represent some of the data we have collected. 
+
+% 9. What is the significance of the output data? (e.g. how can it be analyzed or used)
+% The significance of the output data is information that would be
+% available to the general public regarding data for hydrogeologic problems
+% within the Boise Basin area. It can also give information about climate
+% and the ecology of the area. 
+
+% 10. Are there any parts to your project that you currently do not know how to accomplish or implement?
+% Which parts will you need help from me, if any?
+% Most of the conceptual questions are easily answered from knowledge from
+% previous classes. At the moment, there is not any questions that we have,
+% but it is likely that inquiries regarding computing in MATLAB will occur
+% once the project gets fully started. 
+
+##### SOURCE END #####
+--></body></html>
