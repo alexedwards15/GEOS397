@@ -13,11 +13,15 @@ y = sin(x);
 
 plot(x,y,'k*'); xlabel('x [rad]'); ylabel('sin(x)'); axis('tight');
 
+%%
+
 % trapz  Trapezoidal numerical integration.
-Q = trapz( x, y ); % trapz(x-vector, y-vector)
+Q = trapz( x, y ) % trapz(x-vector, y-vector)
+
+%%
 
 f = @(x) sin(x);
-Qi = integral( f, 0, pi, 'AbsTol', 1.e-8 ); % new method
+Qi = integral( f, 0, pi, 'AbsTol', 1.e-8 ) % new method
 
 %% Class Exercise
 f = @(y) sqrt(y+1)
